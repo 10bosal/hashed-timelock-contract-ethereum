@@ -18,8 +18,11 @@ Use these contracts for creating HTLCs on the Ethereum side of a cross chain ato
 
 ```
 $ npm install
-$ npm run ganache-start
-$ npm run test
+//$ npm run ganache-start
+- GUI용 Ganache 실행
+- Ganache가 생성한 기본 Account 중 배포용으로 사용할 계정의 address를 복사하여 migrations/ 폴더 하위의 .js 파일들의 deployerAccount 변수값을 변경 후 저장 (2개 파일 모두) 
+//$ npm run test
+$ truffle migrate --reset --network localGuiGanache
 Using network 'test'.
 
 Compiling ./test/helper/ASEANToken.sol...
