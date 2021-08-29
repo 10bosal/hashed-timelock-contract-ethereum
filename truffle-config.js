@@ -4,6 +4,11 @@ module.exports = {
       host: "localhost",
       port: 7545, // default for Ganache
       network_id: "4447"
-    }
+    },
+    localGuiGanache: {
+      host: "localhost",
+      port: 7545, // default for Ganache
+      network_id: "5777"
+    },
   }
 }
